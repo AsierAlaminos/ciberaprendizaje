@@ -101,8 +101,8 @@ body{
 /*Cuerpo Inicio*/
 
 .cuerpo_inicio{
-    height: 90vh;
-    width: 98.4vw;
+    height: 90%;
+    width: 100%;
     background-color: transparent;
     color: #FFFFFF;
 }
