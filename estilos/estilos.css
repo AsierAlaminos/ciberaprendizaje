@@ -1,0 +1,185 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #0B090A;
+}
+
+.espaciador{
+    height: 12.5vh;
+    color: transparent;
+}
+
+.espaciadorDos{
+    position: relative;
+    margin-top: 68vh;
+    color: transparent;
+}
+
+/*Barra Superior*/
+.barra_sup{
+
+    z-index: 99;
+    margin-top: -0.6%;
+    margin-left: -0.4vw;
+    background-color: #1B1B1B;
+    position: fixed;
+    height: 15%;
+    width: 101%;
+    border:2px solid black;
+    transition: visibility 2s, background-color 1s;
+    color: #BA181B;
+
+}
+
+.nombrePagDiv{
+    height: 4vh;
+}
+
+.nombreCortoPag{
+    margin-top: 2%;
+    text-align: center;
+    font-size: 2vw;
+}
+
+.nombre_Pag{
+    margin-top: 2%;
+    text-align: center;
+    visibility: hidden;
+    display: none;
+    font-size: 2vw;
+}
+
+.barra_sup:hover{
+    background-color: #BA181B;
+    color: #0B090A;
+}
+
+.barra_sup:hover .nombre_Pag{
+    height: 50%;
+    display: block;
+    visibility: visible;
+}
+
+.barra_sup:hover .nombreCortoPag{
+    display: none;
+}
+
+.menu_opciones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.opciones{
+    height: 5vh;
+    width: 8.3vw;
+    font-size: 100%;
+    text-align: center;
+}
+
+.opcionInicio{
+    margin-left: -3%;
+}
+
+.opcionCE{
+    padding-left: 4%;
+    padding-right: 5%;
+}
+
+.opcionForo{
+    padding-left: 3%;
+}
+
+.retoques_opciones{
+    font-size: 1.2vw;
+}
+
+
+/*Cuerpo Inicio*/
+
+.cuerpo_inicio{
+    height: 90vh;
+    width: 98.4vw;
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
+.first_Div{
+    padding-top: 4%;
+    padding-left: 15%;
+}
+
+.second_Div{
+    width: auto;
+    height: auto;
+    padding-top: 22%;
+    padding-left: 15%;
+}
+
+.third_Div{
+    padding-top: 19%;
+}
+
+.parrafos_index{
+    float: left;
+    width: 30vw;
+}
+
+
+.parrafo_dos{
+    padding-left: 18%;
+    padding-top: 1%;
+    padding-bottom: 4%;
+}
+
+.parrafo_tres{
+    padding-left: 15%;
+}
+
+.imagen_primer_parrafo, .imagen_segundo_parrafo, .imagen_tercer_parrafo{
+    width: 100%;
+    height: auto;
+}
+
+.div_imagen{
+    position: relative;
+    float: left;
+    width: 27vw;
+    height: auto;
+}
+
+.imagen_parrafoUno, .imagen_parrafoTres{
+    padding-left: 13%;
+}
+
+.imagen_parrafoTres{
+    padding-bottom: 5%;
+}
+
+.pregunta_parrafo_uno{
+    font-size: 1.25vw;
+}
+
+.texto_parrafos{
+    font-size: 0.8vw;
+}
+
+
+/*Footer
+
+.footer_div{
+    float: left;
+    margin-top: 5vh;
+    
+}
+
+.footer{
+    color: #FFFFFF;
+    height: 30vh;
+    width: 96.2vw;
+    background-color: transparent;
+    border: 2px solid white;
+}*/
