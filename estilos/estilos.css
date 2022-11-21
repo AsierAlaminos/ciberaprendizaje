@@ -1,3 +1,5 @@
+/*AJUSTES GLOBALES*/
+
 *{
     margin: 0px;
     padding: 0px;
@@ -12,7 +14,7 @@ a{
     text-decoration: none;
 }
 
-.lista_punto{
+.quitar_punto{
     list-style: none;
 }
 
@@ -27,6 +29,11 @@ a{
     color: transparent;
 }
 
+.imagen_responsive{
+    width: 100%;
+    height: auto;
+}
+
 /*Barra Superior*/
 .barra_sup{
 
@@ -37,7 +44,6 @@ a{
     position: fixed;
     height: 15%;
     width: 101%;
-    border:2px solid black;
     transition: visibility 2s, background-color 1s;
     color: #BA181B;
 
@@ -229,15 +235,18 @@ a{
 .inputs_div{
     color: white;
     padding-bottom: 12%;
+    display: grid;
+    place-items: center;
 }
 
 .div_inputs{
     margin-top: 10%;
+    width: 80%;
 }
 
 .input{
     margin-top: 2%;
-    width: 80%;
+    width: 100%;
     border-radius: 25px;
 }
 
@@ -257,4 +266,69 @@ a{
 
 .boton_sesion:hover{
     background-color: red;
+}
+
+/*Temario*/
+
+.titulo_temario{
+    color: white;
+    font-size: 23px;
+    text-align: center;
+}
+
+.listado_temario{
+    display: grid;
+    place-items: center;
+    color: white;
+    text-align: center;
+    margin-top: -1%;
+}
+
+.listas_temario{
+    text-align: left;
+    display: inline-block;
+}
+
+.temas_listas{
+    font-size: 30px;
+    margin-top: 12%;
+}
+
+.ult_lista{
+    padding-bottom: 20%;
+}
+
+/*XXE*/
+
+.xxe_primer_div{
+    color: white;
+    font-size: 18px;
+}
+
+.espaciador_temario{
+    margin-left: 30%;
+}
+
+.titulo_xxe{
+    margin-left: 28%;
+}
+
+.lista_riesgos_xxe{
+    margin-left: 2%;
+}
+
+.parrafo_xxe{
+    width: 50%;
+}
+
+.primer_ejemplo_xxe{
+    display: grid;
+    place-items: center;
+    width: 45%;
+    font-size: 17px;
+}
+
+
+.imagen_codigo1{
+    width: 60%;
 }

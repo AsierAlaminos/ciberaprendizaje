@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <script type="text/javascript" src="js/config.js"></script>
+    <title>XXE</title>
+</head>
+<body>
+    <div class="barra_sup">
+        <div class="nombrePagDiv">
+            <h1 id="idNombre_Pag" class="nombreCortoPag">CA</h1>
+            <h1 id="idNombre_Pag" class="nombre_Pag"><a href="index.html">CiberAprendizaje</a></h1>
+        </div>
+        <br>
+        <div class="menu_opciones">
+            <div class="opciones opcionInicio">
+                <h2 class="retoques_opciones"><a href="index.html">Inicio</a></h2>
+            </div>
+            <div class="opciones opcionCE">
+                <h2 class="retoques_opciones">Como empezar</h2>
+            </div>
+            <div class="opciones opcionTem">
+                <h2 class="retoques_opciones"><a href="temario.html">Temario</a></h2>
+            </div>
+            <div class="opciones opcionForo">
+                <h2 class="retoques_opciones">Foro</h2>
+            </div>
+            <div class="div_sesiones">
+                <ul class="quitar_punto">
+                    <li><a href="inicio_sesion.html">Inicio sesion</a></li>
+                    <li><a href="crear_cuenta.html">Crear cuenta</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="espaciador">.</div>
+    <div class="xxe_primer_div">
+        <div class="titulo_xxe">
+            <h1>¿Qué es XXE?</h1>
+        </div>
+        <div class="espaciador_temario parrafo_xxe">
+            <p>XML External Entities es una vulnerabilidad que permite al atacante acceder a información mediante la interferencia de datos XML. Para poder realizarse el atacante debe tener acceso al archivo XML que se ejecuta y modificarlo añadiendo una entidad en la cual se usa la palabra clave SYSTEM y buscar un archivo con "file:" por la ruta absoluta o usar una url para acceder a otra máquina. El atacante puede leer archivos o realizar ataques SSRF.</p>
+        </div>
+        <div class="titulo_xxe">
+            <h1>Riesgos de la vulnerabilidad</h1>
+        </div>
+        <div class="espaciador_temario parrafo_xxe">
+            <ul class="lista_riesgos_xxe">
+                <li>Falsificación de peticiones al servidor</li>
+                <li>Ataque DoS</li>
+                <li>Robo de datos</li>
+            </ul>
+        </div>
+        <div class="titulo_xxe">
+            <h1>Como funciona un ataque XXE</h1>
+        </div>
+        <div class="espaciador_temario parrafo_xxe">
+            <p>Una entidad es una funcionalidad usada en XML, pero puede derivar en una vulnerabilidad si no se revisa bien el código. Para poder efectuar el ataque se tendrá que tener acceso al código XML y poder ejecutarlo, en el código XML tendremos que escribir una entidad en la que le diremos que tiene que pedir el archivo "/etc/passwd" para poder ver los usuarios que tiene el sistema.</p>
+        </div>
+        <br><br>
+        <div class="espaciador_temario primer_ejemplo_xxe">
+            <p class="primer_ejemplo_parrafo_xxe">Un ejemplo seria:</p>
+            <br>
+            <div class="imagen_codigo1">
+                <img class="imagen_responsive" src="imagenes/captura1codigo.png">
+            </div>        
+        </div>
+        <br><br>
+        <div class="espaciador_temario parrafo_xxe">
+            <p>Despues de escribir este código en el archivo XML hay que hacer la petición al servidor, y en la respuesta vendrá del servidor vendrá el contenido del archivo.</p>
+        </div>
+    </div>
+</body>
+</html>
