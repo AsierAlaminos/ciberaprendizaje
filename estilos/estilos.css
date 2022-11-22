@@ -321,7 +321,7 @@ a{
     width: 50%;
 }
 
-.primer_ejemplo_xxe{
+.ejemplo_xxe{
     display: grid;
     place-items: center;
     width: 45%;
@@ -329,6 +329,6 @@ a{
 }
 
 
-.imagen_codigo1{
+.imagen_codigo{
     width: 60%;
 }

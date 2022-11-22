@@ -62,16 +62,24 @@
             <p>Una entidad es una funcionalidad usada en XML, pero puede derivar en una vulnerabilidad si no se revisa bien el código. Para poder efectuar el ataque se tendrá que tener acceso al código XML y poder ejecutarlo, en el código XML tendremos que escribir una entidad en la que le diremos que tiene que pedir el archivo "/etc/passwd" para poder ver los usuarios que tiene el sistema.</p>
         </div>
         <br><br>
-        <div class="espaciador_temario primer_ejemplo_xxe">
+        <div class="espaciador_temario ejemplo_xxe">
             <p class="primer_ejemplo_parrafo_xxe">Un ejemplo seria:</p>
             <br>
-            <div class="imagen_codigo1">
+            <div class="imagen_codigo">
                 <img class="imagen_responsive" src="imagenes/captura1codigo.png">
             </div>        
         </div>
         <br><br>
         <div class="espaciador_temario parrafo_xxe">
             <p>Despues de escribir este código en el archivo XML hay que hacer la petición al servidor, y en la respuesta vendrá del servidor vendrá el contenido del archivo.</p>
+        </div>
+        <br><br>
+        <div class="espaciador_temario ejemplo_xxe">
+            <p class="segundo_ejemplo_parrafo_xxe">El servidor respondería asi: </p>
+            <br>
+            <div class="imagen_codigo">
+                <img class="imagen_responsive" src="imagenes/captura2codig.png" alt="archivo /etc/passwd">
+            </div>
         </div>
     </div>
 </body>
